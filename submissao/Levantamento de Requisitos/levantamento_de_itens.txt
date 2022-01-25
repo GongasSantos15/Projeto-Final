@@ -1,0 +1,88 @@
+Levantamento de requisitos:
+
+Página de login:
+	Fazer login usando um email e uma password
+	Fazer login com a conta Google, Microsoft, Facebook e Apple
+	Criar conta
+
+Homepage:
+	Convidado (offline):
+		Escolher um nome
+		Iniciar um jogo
+		Ver a explicação do jogo
+		Escolher o modo de jogo:
+			SLOW(deve durar 5s),
+			NORMAL(deve durar 3s),
+			fast(deve durar 1,5s),
+			LIZARD-SPOCK(modo de jogo baseado na série "A Teoria do Big Bang")
+		Deve ser apresentado alterar de dark mode para light mode
+
+	Conta (online):
+		Iniciar um jogo
+		Ver a explicação do jogo
+		Escolher o modo de jogo:
+			SLOW(deve durar 5s),
+			NORMAL(deve durar 3s),
+			fast(deve durar 1,5s),
+			LIZARD-SPOCK(modo de jogo baseado na série "A Teoria do Big Bang")
+			CHEAT-MODE(modo de jogo em que nos últimos 2 segundos consegue-se ver onde está o rato do oponente)
+		Deve ser apresentado alterar de dark mode para light mode
+
+Página das skins:
+	Convidado:
+		Tem skins até desligar o pc
+		As skins devem estar divididas por raridade
+		Deve ser possível filtrar as skins (raridade, preço, tema)
+		Deve ser apresentada uma imagem para cada skin
+		Deve ser possível ver o preço da skin
+
+	Conta:
+		Tudo o que o convidado tem, exceto as skins estarem ligadas à conta
+
+Torneios:
+	Convidado:
+		Não tem direito aos torneios
+
+	Conta:
+		Devem ser apresentadas as regras do torneio
+		Deve ser apresentada uma imagem que representa o torneio
+		Devem ser apresentadas as recompensas por torneio (pódio)
+
+Leaderboards:
+	Convidado:
+		Não tem direito às Leaderboards
+
+	Conta:
+		Deve ser apresentado diferentes tipos de leaderboards:
+			Pontuação mais alta
+			Pessoas com mais vitórias nos torneios
+			Jogos mais recentes e respetivos resultados
+			Pontuação mais alta por modo de jogo
+			Maior percentagem de vitórias tendo em conta o nº de jogos realizados
+
+Recompensas:
+	Convidado:
+		Deve conseguir recolher as recompensas diárias
+
+	Conta:
+		Deve ser apresentado o nº de recompensas por recolher
+		Deve conseguir recolher as recompensas e as recompensas diárias
+
+Aba de amigos:
+	Convidado:
+		Não tem direito à aba de amigos
+
+	Conta:
+		Deve ser apresentado o nº de amigos online
+		Deve ser apresentada uma lista de amigos
+		Deve ser apresentada uma opção para adicionar amigos com o nome e id, QR Code ou link
+
+Perfil:
+	Convidado:
+		Não tem direito ao perfil
+
+	Conta:
+		Deve ser possível aparecer a foto do usuário
+		Deve ser possível alterar a foto, o nome, a nacionalidade(prazo de 3 meses), o idioma e o sexo do usuário
+		Deve ser apresentado o nº de vitórias e jogos realizados pelo usuário
+

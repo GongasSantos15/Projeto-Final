@@ -1,0 +1,95 @@
+Brainstorming:
+
+	Logotipo
+	Sistema de skins com diferentes raridades e loot boxes
+	Diferentes modos de jogo
+	Dark mode e Light mode
+	Recompensas diárias com login com bónus de 10 em 10 dias
+	Sistema de amigos no jogo e opção de adicionar através do nome e da tag e opção de convite para um lobby de 2 jogadores
+	Explicação de como o jogo funcemina
+	Sistema de moedas devido a skins
+	Opção de criar a tua skin?
+	Torneios
+	Ao ganhar um torneio receber uma skin e uma determinada quantia de moedas e 2º e 3º lugar
+	Sistema de XP
+	Sistema de Login com Leaderbords
+	Opção de login com a conta Google, Microsoft, Facebook e Apple
+	Ao iniciar o jogo leva para uma nova janela
+	Ao chegar a um certo nível, ganhar uma determinada quantia de moedas
+
+Ideias para a interface:
+
+Página inicial -
+	Login e Signup
+	Opção de jogar como convidado, alertando os jogadores que não terão algumas regalias, perguntando se queriam continuar
+
+Página inicial como convidado -
+	Criar uma navigation bar: home, skins, (torneios, leaderbords, recompensas, aba de amigos), toggle para dark mode e light mode e perfil
+	Criar um título e logotipo
+	Descrição do jogo
+	Bem vindo {valor que está no input}
+	Criar uma label "Introduza o seu nome"
+	Criar um input para o nome do jogador e verificar se o nome não existe na base de dados
+	Criar um botão para iniciar o jogo
+	Explicação do jogo
+
+Página inicial com conta - NECESSITA CONTA
+	Criar uma navigation bar: home, skins, torneios, leaderbords, recompensas, aba de amigos, toggle para dark mode e light mode e perfil
+	Criar um titulo e logotipo
+	Descrição do jogo
+	No canto superior direito apresentar a aba dos amigos
+	Bem vindo {Nome do usuário}
+	Criar um botão para iniciar o jogo
+	Explicação do jogo
+
+Jogo como convidado (BOTS) -
+	Jogo inicia na aba existente, tendo a opção para maximizar o jogo
+	Titulo e logotipo
+	Escolher o modo de jogo (normal (3s), fast (1,5s), slow (5s), Lizard-Spock)
+	Escolher a quantidade de rondas para esse jogo (1 ronda, 3 rondas, 5 rondas, 10 rondas)
+	Criar um botão a dizer JOGAR
+
+Jogar com conta (ONLINE) - NECESSITA CONTA
+	Jogo inicia na aba existente, tendo a opção para maximizar o jogo
+	Titulo e logotipo
+	Escolher o modo de jogo (normal (3s), fast (1,5s), slow (5s), Lizard-Spock, cheat-mode)
+	Escolher a quantidade de rondas para esse jogo (1 ronda, 3 rondas, 5 rondas, 10 rondas)
+	Criar um botão a dizer JOGAR
+
+Skins -
+	Titulo e logotipo
+	Apresentar todas as skins existentes por raridades
+	Ordenar as skins por preço e dar opções para filtrar
+	Apresentar a imagem da skin e o seu preço (em moedas in-game)
+	Pequena descrição da skin
+	Apresentar um botão comprar
+
+Torneios - NECESITA CONTA
+	Titulo e logotipo
+	Regras do torneio
+	Apresentar uma imagem ilustrativa ao torneio
+	Apresentar todas as opções de torneios
+	Apresentar as recompensas do pódio
+	Criar um botão entrar
+
+Leaderbords - NECESSITA CONTA
+	Titulo e logotipo
+	Apresentar diferentes tipos de leaderbord (pontuação mais alta, pessoas que ganharam mais vezes o torneio x, jogos mais recentes e respetivos resultados e pontuação mais alta por modo de jogo, maior percentagem de vitórias tendo em conta o nº de jogos realizados)
+
+Recompensas - NECESSITA CONTA exceto as recompensas diárias
+	Número de recompensas por recolher
+	Ao clicar o utilizador abre um menu que expande e consegue recolher as suas recompensas e as recompensas diárias
+	Criar um botão ao lado de cada recompensa a dizer "Coletar"
+
+Aba de amigos - NECESSITA CONTA
+	Número de amigos online
+	Lista de amigos adcionados
+	Opção para adicionar amigos com o nome e id respetivo ou QR Code ou link
+
+Perfil - NECESSITA CONTA
+	Ao clicar na foto da pessoa, abre um menu que expande.
+	Este menu tem a opção de mudar a foto, o nome, a nacionalidade(90 dias), idioma, sexo
+	No fundo deste menu tem a contagem de vitórias e jogos realizados
+
+Toggle para mudar de dark mode para light mode -
+	Botão com um switch on/off em que a imagem do botão é uma lua MOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOON
