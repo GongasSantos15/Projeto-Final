@@ -4,12 +4,17 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import GameOffline from './GameOffline';
+import { Routes, Route, Link } from 'react-router-dom';
+import { useNavigate, useParams } from "react-router";
+
 
 export default function Homepage({DarkMode, setDarkMode}) {
     
 const [profileMenu, setProfileMenu] = useState(null);
 const [rewardsMenu, setRewardsMenu] = useState(null)
+const [fullscreen, setFullscreen] = useState(false)
 
+// Menu Rewards
 const handleCloseRewardsMenu = () => {
   setRewardsMenu(null);
 }
@@ -18,6 +23,7 @@ const handleClickRewardsMenu = (e) => {
   setRewardsMenu(e.currentTarget);
 } 
 
+// Menu Profile
 const handleCloseProfileMenu = () => {
   setProfileMenu(null);
 };
@@ -28,7 +34,7 @@ const handleClickProfileMenu = (e) => {
 
   return (
   <>
-    <h1 className='title'>Rock, Paper, Scissors</h1>
+    <h1 className='title'>R{<img className='imgTitle' src={require('./stone.png')}></img>}ck, P{<img className='imgTitle' src={require('./paper-plane.png')}></img>}per, S{<img className='imgScissors' src={require('./cut.png')}></img>}issors</h1>
     
     {/* Navigation Bar */}
     <ul className='nav'>
@@ -55,12 +61,12 @@ const handleClickProfileMenu = (e) => {
             onClose={handleCloseRewardsMenu}
             open={Boolean(rewardsMenu)}
             >
-              <MenuItem onClick={handleCloseRewardsMenu}>Rewards</MenuItem>
+              <MenuItem onClick={handleCloseRewardsMenu}>Collect</MenuItem>
             </Menu>
         </div>
 
         {/* Dark Mode Toggle */}
-        <li className='toggle'><DarkModeToggle className='darkMode' onChange={() => setDarkMode(!DarkMode)} checked={DarkMode} size={50} /></li>
+        <li className='toggle'><DarkModeToggle className='darkMode' onChange={() => setDarkMode(!DarkMode)} checked={DarkMode} size={45} /></li>
         
         {/* Profile Menu */}
         <div>
@@ -69,7 +75,7 @@ const handleClickProfileMenu = (e) => {
             aria-haspopup="true"
             onClick={handleClickProfileMenu}
           >
-            <img src={require('./profile.png')} width={'45px'}></img>
+            <img src={require('./profile.png')}></img>
           </Button>
           <Menu
           className="profileMenu"
@@ -85,9 +91,10 @@ const handleClickProfileMenu = (e) => {
         </div>
     </ul>
 
-    <div className='game'>
-      <GameOffline />
-    </div>
+    {/* <div className={['game'].concat(fullscreen ? ['fullscreen'] : []).join(' ')} onClick={() => setFullscreen(f => !f)}> */}
+       <GameOffline className="gameOffline" />
+    {/* </div> */}
+
   </>
   )
 }
