@@ -17,3 +17,5 @@ const express = require("express")
     })
 
     app.listen(port, () => console.log(`À escuta em http://localhost:${port}`))
+
+    // SignUp

@@ -3,8 +3,8 @@
 /* ------------------------------------------------------------------- Navigation Bar -------------------------------------------------------------- */
 .nav {
   display: flex;
+  justify-content: center;
   width: 100%;
-  float: left;
   padding: 0;
   list-style: none;
   background-color: #f2f2f2;
@@ -15,17 +15,27 @@
   align-items: center;
 }
 
-.nav li a {
-      display: block;
-      padding: 20px 20px;
-      text-decoration: none;
-      font-weight: bold;
-      color: rgb(0, 0, 0);
+.things {
+  display: flex;
+  justify-content: right;
+  padding: 0;
+  list-style: none;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ccc; 
+  border-top: 1px solid #ccc; 
+  margin: 0;
+  height: 50px;
+  align-items: center;
+  margin-left: 1000px;
 }
 
 .nav li {
+  display: block;
   text-decoration: none;
-  padding: 8px 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 15px 40px;
 }
 
 /*  -------------------------------------------------------------------- Dark Mode ----------------------------------------------------------------- */
@@ -36,13 +46,19 @@
   color: white;
 }
 
+.darkMode .things {
+  background-color: rgb(78, 78, 78);
+  border-bottom: 1px solid rgb(112, 112, 112);
+  border-top: 1px solid rgb(112, 112, 112); 
+}
+
 .darkMode .nav {
   background-color: rgb(78, 78, 78);
   border-bottom: 1px solid rgb(112, 112, 112);
   border-top: 1px solid rgb(112, 112, 112); 
 }
 
-.darkMode .nav li a {
+.darkMode .nav li {
   color: rgb(255, 255, 255);
 }
 
@@ -56,18 +72,6 @@
   font-family: 'Press Start 2P';
 }
 
-/*  ------------------------------------------------------------------------ Profile Menu ---------------------------------------------------------- */
-.profileMenu{
-  margin-left: 94%;
-  margin-top: 138px;
-}
-
-/*--------------------------------------------------------------------------- Rewards Menu ----------------------------------------------------------*/
-.rewardsMenu{
-  margin-left: 85%;
-  margin-top: 138px;
-}
-
 /* ------------------------------------------------------------------------- Dark Mode Toggle -------------------------------------------------------*/
 .toggle{
   margin-top: 32px;
@@ -76,10 +80,10 @@
 /*--------------------------------------------------------------------------------- Game ------------------------------------------------------------*/
 .game{
   position: fixed;
-  top: 250px;
-  right: 300px;
-  bottom: 80px;
-  left: 300px;
+  top: 200px;
+  right: 150px;
+  bottom: 50px;
+  left: 150px;
   border-radius: 50px;
   background-color: rgb(0, 0, 0);
   color: white;
@@ -98,11 +102,6 @@
   border-radius: 0px;
 }
 
-/*  */
-.rewards{
-  margin-left: 43%;
-}
-
 div.choices {
   position: fixed;
   height: 64px;
@@ -110,7 +109,12 @@ div.choices {
   flex-direction: row;
   justify-content: center;
   gap: 60px;
-  margin-top: 400px;
+  margin-top: 500px;
+}
+
+div.choices img {
+  width: 64px;
+  height: 64px;
 }
 
 div.choices img:hover {

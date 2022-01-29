@@ -12,31 +12,44 @@
 
 .player{
   position: fixed;
-  margin-right: 1100px;
-  margin-bottom: 450px;
+  margin-right: 1350px;
+  margin-bottom: 550px;
   color: rgb(147, 64, 255);
   font-size: 40px;
+  font-weight: 800;
 
 }
 
 .computer{
   position: fixed;
-  margin-left: 1050px;
-  margin-bottom: 450px;
+  margin-right:65px;
+  margin-left: 1350px;
+  margin-bottom: 550px;
   font-size: 40px;
-  color: rgb(77, 184, 255)
+  color: rgb(77, 184, 255);
+  font-weight: 800;
 }
 
 .userChoice{
   position: fixed;
   margin-bottom: 150px;
-  margin-right: 450px;
+  margin-right: 650px;
+}
+
+.userChoice img {
+  width: 180px;
+  height: 180px;
+}
+
+.CPUChoice img {
+  width: 180px;
+  height: 180px
 }
 
 .CPUChoice {
   position: fixed;
   margin-bottom: 150px;
-  margin-left: 450px;
+  margin-left: 650px;
 }
 
 .versus {
@@ -59,6 +72,25 @@
 
 .result{
   position: fixed;
-  margin-top: 200px;
+  margin-top: 250px;
+  font-size: 30px;
+}
+
+.playerScore {
+  position: fixed;
+  margin-right: 600px;
+  margin-bottom: 550px;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.computerScore {
+  position: fixed;
+  margin-left: 600px;
+  margin-bottom: 550px;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 800;
 }
 
